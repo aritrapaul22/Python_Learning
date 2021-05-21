@@ -12,7 +12,7 @@ class Movie:
 
     def print_info(self):
         print(f'<<{self.name}>> by {self.director}')
-        print(f'Rating of <<{my_movie.name}>> is {my_movie.average_rating()}')
+        print(f'Rating of <<{self.name}>> is {self.average_rating()}')
 
     def average_rating(self):
         return sum(self.rating) / len(self.rating)
@@ -27,8 +27,8 @@ class WebSeries(Movie):
         return self.episodes
 
 
-my_movie = Movie('BORAT', 'Someone Unknown', [4, 4, 4])
-my_movie.print_info()
+u_movie = Movie('BORAT', 'Someone Unknown', [4, 4, 4])
+u_movie.print_info()
 
 web_series = WebSeries('Suits', 'Gosling', [5, 4, 3], 12)
 print(f'Series {web_series.name} has {web_series.average_rating()} avg rating and {web_series.getepisodes()} episodes.')
