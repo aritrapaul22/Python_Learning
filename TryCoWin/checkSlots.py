@@ -4,7 +4,7 @@ from datetime import date
 from datetime import timedelta
 
 
-class Cowin:
+class CoWin:
     def __init__(self, loc, today):
         self.pin = loc
         tomorrow = today + timedelta(days=1)
@@ -24,5 +24,5 @@ class Cowin:
 
 if __name__ == '__main__':
     pin = input("Enter the PIN Code of the area : ")
-    check = Cowin(pin, date.today())
+    check = CoWin(pin, date.today())
     check.check_slots()
