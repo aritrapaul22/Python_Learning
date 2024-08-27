@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from openpyxl import Workbook
 from openpyxl.styles import Color
 
+
 f_path = abspath("resources/transactions.html")
 
 html = open(f_path).read()
