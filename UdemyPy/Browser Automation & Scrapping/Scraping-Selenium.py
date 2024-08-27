@@ -10,7 +10,8 @@ def get_driver():
     options.add_argument("disable-infobars")
     options.add_argument("start-maximized")
 
-    service = Service(executable_path="C:\\Users\\aritr\\Documents\\chromedriver\\chromedriver-win64\\chromedriver.exe")
+    service = Service(executable_path='C:\\Users\\aritr\\PycharmProjects\\WebDrivers\\chromedriver\\chromedriver'
+                                      '-win64\\chromedriver.exe')
     driver = webdriver.Chrome(service=service, options=options)
     driver.get("https://www.demoblaze.com/index.html")
     return driver

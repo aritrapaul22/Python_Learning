@@ -40,7 +40,7 @@ print(arr)
 # Search an element
 ser = input("Enter the element to search : ")
 result = binarysearch(arr, int(ser), begin=0, end=len(arr))
-print(result)
+# print(result)
 if result != -1:
     print(f"{ser} is found at {result+1}")
 else:
