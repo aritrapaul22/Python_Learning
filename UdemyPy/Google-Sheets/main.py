@@ -9,7 +9,7 @@ def getPublicSpreadsheet():
 
 def getPrivateSpreadsheet():
     # Establish Connection
-    # gc = gspread.service_account('udemypy-secrets.json')
+    gc = gspread.service_account('udemypy-secrets.json')
 
     # Get Spreadsheet
     spreadsheet = gc.open('TestData_PyLearning')
@@ -41,7 +41,7 @@ def getPrivateSpreadsheet():
 
 def updateCell():
     # Establish Connection
-    # gc = gspread.service_account('udemypy-secrets.json')
+    gc = gspread.service_account('udemypy-secrets.json')
 
     # Get Spreadsheet
     spreadsheet = gc.open('TestData_PyLearning')
@@ -57,7 +57,7 @@ def updateCell():
 
 def updateColumn():
     # Establish Connection
-    # gc = gspread.service_account('udemypy-secrets.json')
+    gc = gspread.service_account('udemypy-secrets.json')
 
     # Get Spreadsheet
     spreadsheet = gc.open('TestData_PyLearning')
@@ -73,7 +73,7 @@ def updateColumn():
 
 def calculateMean():
     # Establish Connection
-    # gc = gspread.service_account('udemypy-secrets.json')
+    gc = gspread.service_account('udemypy-secrets.json')
 
     # Get Spreadsheet
     spreadsheet = gc.open('TestData_PyLearning')
